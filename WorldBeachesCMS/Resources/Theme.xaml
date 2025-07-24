@@ -1,0 +1,27 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="PrimaryBackground" Color="#F0F8FF" />
+    <SolidColorBrush x:Key="AccentColor" Color="#007ACC" />
+    <SolidColorBrush x:Key="LightAccentColor" Color="#50A2E0" />
+    <SolidColorBrush x:Key="ForegroundColor" Color="#333333" />
+    <SolidColorBrush x:Key="BorderColor" Color="#CCCCCC" />
+    <Style TargetType="Button">
+        <Setter Property="Background" Value="{StaticResource AccentColor}"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Padding" Value="10,5"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{StaticResource LightAccentColor}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="PageBorderStyle" TargetType="Border">
+        <Setter Property="CornerRadius" Value="15"/>
+        <Setter Property="Background" Value="{StaticResource PrimaryBackground}"/>
+        <Setter Property="Padding" Value="25"/>
+    </Style>
+</ResourceDictionary>

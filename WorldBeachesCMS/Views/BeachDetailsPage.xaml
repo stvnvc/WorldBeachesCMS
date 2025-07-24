@@ -1,0 +1,55 @@
+﻿<Page x:Class="WorldBeachesCMS.Views.BeachDetailsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WorldBeachesCMS.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="BeachDetailsPage"
+      Loaded="Page_Loaded">
+
+    <Border Style="{StaticResource PageBorderStyle}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Button x:Name="BackButton"
+                    Content="&lt; Back to List"
+                    HorizontalAlignment="Left"
+                    Click="BackButton_Click"/>
+
+            <ScrollViewer Grid.Row="1"
+                          VerticalScrollBarVisibility="Auto"
+                          Margin="0,15,0,0">
+                <StackPanel>
+                    <TextBlock Text="{Binding Name}"
+                               FontSize="32"
+                               FontWeight="Bold"
+                               TextWrapping="Wrap"/>
+
+                    <TextBlock FontSize="18" 
+                               Margin="0,5,0,20">
+                        
+                        <Run Text="Rating:"
+                             FontWeight="SemiBold"/>
+                        <Run Text="{Binding Rating, StringFormat='0.0 / 5'}"/>
+                    </TextBlock>
+
+                    <Image Source="{Binding FullImagePath}"
+                           MaxHeight="300"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,20"/>
+
+                    <RichTextBox x:Name="DescriptionRichTextBox"
+                                 IsReadOnly="True"
+                                 BorderThickness="0"
+                                 Background="Transparent"/>
+                </StackPanel>
+            </ScrollViewer>
+            
+        </Grid>
+    </Border>
+</Page>

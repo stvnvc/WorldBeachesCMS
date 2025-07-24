@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfBeach xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Beach>
+		<Name>Anse Source d'Argent</Name>
+		<Rating>4.8</Rating>
+		<ImagePath>Data/Images/anse_source_dargent.jpg</ImagePath>
+		<RtfFilePath>Data\RtfContent\anse_source_dargent.rtf</RtfFilePath>
+		<CreationDate>2025-07-10T10:00:00</CreationDate>
+	</Beach>
+	<Beach>
+		<Name>Vaadhoo Island</Name>
+		<Rating>4.1</Rating>
+		<ImagePath>Data\Images\vaadhoo.jpg</ImagePath>
+		<RtfFilePath>Data\RtfContent\vaadhoo.rtf</RtfFilePath>
+		<CreationDate>2025-07-24T14:02:49.8210665+02:00</CreationDate>
+	</Beach>
+	<Beach>
+		<Name>Navagio</Name>
+		<Rating>4</Rating>
+		<ImagePath>Data\Images\Navagio.jpg</ImagePath>
+		<RtfFilePath>Data\RtfContent\navagio.rtf</RtfFilePath>
+		<CreationDate>2025-07-24T14:07:25.14552+02:00</CreationDate>
+	</Beach>
+</ArrayOfBeach>
