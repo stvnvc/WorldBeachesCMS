@@ -1,1 +1,1 @@
-# WorldBeachesCMS
+University project - WorldBeachesCMS
